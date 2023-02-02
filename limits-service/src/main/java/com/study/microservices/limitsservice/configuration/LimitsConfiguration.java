@@ -2,9 +2,11 @@ package com.study.microservices.limitsservice.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 
 
 @ConfigurationProperties("limits-service")
+@RefreshScope
 public class LimitsConfiguration {
     private int minimum;
     private int maximum;
