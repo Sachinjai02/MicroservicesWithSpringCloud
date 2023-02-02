@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="Updating limits service to read max/min limits from application.properties &#10;Adding spring cloud config server">
+    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="adding currency exchange service - &#10;/currency-exchange/from/{USD}/to/{INR}&#10;returns the exchange conversion rate from inmemory database (h2)">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/controllers/CurrencyConversionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/entities/CurrencyConversion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/CurrencyExchangeServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/controllers/CurrencyExchangeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/models/CurrencyExchange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/repository/CurrencyExchangeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/test/java/com/study/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/limits-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-config-server/src/main/java/com/study/microservices/springcloudconfigserver/SpringCloudConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-config-server/src/main/java/com/study/microservices/springcloudconfigserver/SpringCloudConfigServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-config-server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -82,7 +96,21 @@
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.LimitsServiceApplication">
+  <component name="RunManager" selected="Spring Boot.CurrencyConversionServiceApplication">
+    <configuration name="CurrencyConversionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="currency-conversion-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.microservices.currencyconversionservice.CurrencyConversionServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrencyExchangeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="currency-exchange-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.microservices.currencyexchangeservice.CurrencyExchangeServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LimitsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="limits-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.microservices.limitsservice.LimitsServiceApplication" />
@@ -106,7 +134,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675318298424</updated>
-      <workItem from="1675318304022" duration="7216000" />
+      <workItem from="1675318304022" duration="16059000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Limits Microservice as a config client">
       <created>1675319678947</created>
@@ -136,7 +164,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675325959099</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1. integrating cloud config server to git&#10;2. integrating limits service (cloud config client) to cloud config server">
+      <created>1675335148355</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675335148355</updated>
+    </task>
+    <task id="LOCAL-00006" summary="dynamic refresh of configurations using actuator/refresh POST call.">
+      <created>1675336558096</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675336558096</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +201,9 @@
     </ignored-roots>
     <MESSAGE value="Adding Limits Microservice as a config client" />
     <MESSAGE value="Updating limits service to read max/min limits from application.properties &#10;Adding spring cloud config server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating limits service to read max/min limits from application.properties &#10;Adding spring cloud config server" />
+    <MESSAGE value="1. integrating cloud config server to git&#10;2. integrating limits service (cloud config client) to cloud config server" />
+    <MESSAGE value="dynamic refresh of configurations using actuator/refresh POST call." />
+    <MESSAGE value="adding currency exchange service - &#10;/currency-exchange/from/{USD}/to/{INR}&#10;returns the exchange conversion rate from inmemory database (h2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding currency exchange service - &#10;/currency-exchange/from/{USD}/to/{INR}&#10;returns the exchange conversion rate from inmemory database (h2)" />
   </component>
 </project>
