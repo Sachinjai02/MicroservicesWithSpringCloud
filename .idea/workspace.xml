@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="Adding Limits Microservice as a config client">
-      <change afterPath="$PROJECT_DIR$/limits-service/src/main/java/com/study/microservices/limitsservice/bean/Limits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/limits-service/src/main/java/com/study/microservices/limitsservice/configuration/LimitsConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/limits-service/src/main/java/com/study/microservices/limitsservice/controllers/LimitsController.java" afterDir="false" />
+    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="Updating limits service to read max/min limits from application.properties &#10;Adding spring cloud config server">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/src/main/java/com/study/microservices/limitsservice/LimitsServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/limits-service/src/main/java/com/study/microservices/limitsservice/LimitsServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/limits-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/limits-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-config-server/src/main/java/com/study/microservices/springcloudconfigserver/SpringCloudConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-config-server/src/main/java/com/study/microservices/springcloudconfigserver/SpringCloudConfigServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-config-server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2LAeOei5JE5ZJMA9LF7mm7P4TXs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -68,16 +75,24 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "C:/Studies/MicroservicesWithSpringBootAndCloud/spring-cloud-config-server/pom.xml",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.LimitsServiceApplication">
     <configuration name="LimitsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="limits-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.microservices.limitsservice.LimitsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringCloudConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.microservices.springcloudconfigserver.SpringCloudConfigServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675318298424</updated>
-      <workItem from="1675318304022" duration="4225000" />
+      <workItem from="1675318304022" duration="7216000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Limits Microservice as a config client">
       <created>1675319678947</created>
@@ -114,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675320619589</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updating limits service to read max/min limits from application.properties &#10;Adding spring cloud config server">
+      <created>1675325959099</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675325959099</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +158,7 @@
       <path value="$PROJECT_DIR$/limits-service" />
     </ignored-roots>
     <MESSAGE value="Adding Limits Microservice as a config client" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Limits Microservice as a config client" />
+    <MESSAGE value="Updating limits service to read max/min limits from application.properties &#10;Adding spring cloud config server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating limits service to read max/min limits from application.properties &#10;Adding spring cloud config server" />
   </component>
 </project>
