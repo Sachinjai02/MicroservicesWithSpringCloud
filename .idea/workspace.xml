@@ -5,22 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="Adding Limits Microservice as a config client">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/limits-service/src/main/java/com/study/microservices/limitsservice/bean/Limits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/limits-service/src/main/java/com/study/microservices/limitsservice/configuration/LimitsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/limits-service/src/main/java/com/study/microservices/limitsservice/controllers/LimitsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/src/main/java/com/study/microservices/limitsservice/LimitsServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/src/test/java/com/study/microservices/limitsservice/LimitsServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/limits-service/src/main/java/com/study/microservices/limitsservice/LimitsServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/limits-service/src/main/java/com/study/microservices/limitsservice/LimitsServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/limits-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/limits-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,6 +59,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -85,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675318298424</updated>
-      <workItem from="1675318304022" duration="2194000" />
+      <workItem from="1675318304022" duration="4225000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Limits Microservice as a config client">
       <created>1675319678947</created>
@@ -94,7 +100,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675319678947</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding Limits Microservice as a config client">
+      <created>1675320580482</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675320580482</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding Limits Microservice as a config client">
+      <created>1675320619588</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675320619589</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
