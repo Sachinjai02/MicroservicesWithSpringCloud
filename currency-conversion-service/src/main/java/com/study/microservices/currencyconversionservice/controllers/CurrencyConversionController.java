@@ -1,6 +1,7 @@
 package com.study.microservices.currencyconversionservice.controllers;
 
 import com.study.microservices.currencyconversionservice.entities.CurrencyConversion;
+import com.study.microservices.currencyconversionservice.restproxy.CurrencyExchangeProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,8 @@ import java.util.Map;
 @RequestMapping("/currency-conversion")
 public class CurrencyConversionController {
 
+    @Autowired
+    private CurrencyExchangeProxy proxy;
     @Autowired
     private RestTemplate restTemplate;
     @GetMapping("/from/{from}/to/{to}/quantity/{quantity}")
@@ -31,6 +34,19 @@ public class CurrencyConversionController {
                 CurrencyConversion.class,
                 params);
 
+        conversion.setQuantity(quantity);
+        conversion.setTotalCalculatedAmount(conversion.getConversionMultiple() * quantity);
+        return conversion;
+    }
+
+    @GetMapping("feign/from/{from}/to/{to}/quantity/{quantity}")
+    public CurrencyConversion calculateCurrencyConversionFeign(
+            @PathVariable("from") String from,
+            @PathVariable("to") String to,
+            @PathVariable("quantity") Double quantity
+    ) {
+
+        CurrencyConversion conversion = proxy.calculateCurrencyConversion(from, to);
         conversion.setQuantity(quantity);
         conversion.setTotalCalculatedAmount(conversion.getConversionMultiple() * quantity);
         return conversion;

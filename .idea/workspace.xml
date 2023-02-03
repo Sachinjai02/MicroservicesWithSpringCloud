@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="calling currency exchange microservice from currency conversion microservice using Rest template and hardcoded Url">
+    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="1. Adding Naming Server - Eureka discovery server&#10;2. Updating each microservice to act as Eureka clients&#10;3. Updating feign client to use LB &amp; discovery server">
+      <change afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/restproxy/CurrencyExchangeProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-discovery-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-discovery-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-discovery-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-discovery-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-discovery-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-discovery-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-discovery-server/src/main/java/com/study/microservices/springclouddiscoveryserver/SpringCloudDiscoveryServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-discovery-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-discovery-server/src/test/java/com/study/microservices/springclouddiscoveryserver/SpringCloudDiscoveryServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-conversion-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/CurrencyConversionServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/CurrencyConversionServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/controllers/CurrencyConversionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/controllers/CurrencyConversionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/entities/CurrencyConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/entities/CurrencyConversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -59,13 +74,16 @@
     </option>
   </component>
   <component name="ProjectId" id="2LAeOei5JE5ZJMA9LF7mm7P4TXs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -75,7 +93,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Studies/MicroservicesWithSpringBootAndCloud/spring-cloud-config-server/pom.xml",
+    "last_opened_file_path": "C:/Studies/MicroservicesWithSpringBootAndCloud/spring-cloud-discovery-server/pom.xml",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -83,7 +102,7 @@
     "spring.configuration.checksum": "86add317e0c47629e862c10fd06a568c"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.CurrencyConversionServiceApplication">
+  <component name="RunManager" selected="Spring Boot.CurrencyExchangeServiceApplication">
     <configuration name="CurrencyConversionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="currency-conversion-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.microservices.currencyconversionservice.CurrencyConversionServiceApplication" />
@@ -112,6 +131,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringCloudDiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-discovery-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.microservices.springclouddiscoveryserver.SpringCloudDiscoveryServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -123,7 +149,7 @@
       <updated>1675318298424</updated>
       <workItem from="1675318304022" duration="16573000" />
       <workItem from="1675357032745" duration="49000" />
-      <workItem from="1675401197950" duration="911000" />
+      <workItem from="1675401197950" duration="8657000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Limits Microservice as a config client">
       <created>1675319678947</created>
@@ -174,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675346074045</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="calling currency exchange microservice from currency conversion microservice using Rest template and hardcoded Url">
+      <created>1675402190403</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675402190403</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +225,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/limits-service" />
     </ignored-roots>
@@ -202,6 +236,7 @@
     <MESSAGE value="adding currency exchange service - &#10;/currency-exchange/from/{USD}/to/{INR}&#10;returns the exchange conversion rate from inmemory database (h2)" />
     <MESSAGE value="adding currency exchange service - &#10;/currency-exchange/from/{USD}/to/{INR}&#10;returns the exchange conversion rate from inmemory database (h2)&#10;&#10;adding currency-conversion microservice" />
     <MESSAGE value="calling currency exchange microservice from currency conversion microservice using Rest template and hardcoded Url" />
-    <option name="LAST_COMMIT_MESSAGE" value="calling currency exchange microservice from currency conversion microservice using Rest template and hardcoded Url" />
+    <MESSAGE value="1. Adding Naming Server - Eureka discovery server&#10;2. Updating each microservice to act as Eureka clients&#10;3. Updating feign client to use LB &amp; discovery server" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Adding Naming Server - Eureka discovery server&#10;2. Updating each microservice to act as Eureka clients&#10;3. Updating feign client to use LB &amp; discovery server" />
   </component>
 </project>
