@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="1. Adding Naming Server - Eureka discovery server&#10;2. Updating each microservice to act as Eureka clients&#10;3. Updating feign client to use LB &amp; discovery server">
-      <change afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/src/main/java/com/study/microservices/springcloudapigateway/SpringCloudApiGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/src/test/java/com/study/microservices/springcloudapigateway/SpringCloudApiGatewayApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="1. Spring cloud API gateway added with eureka client&#10;spring.cloud.gateway.discovery.locator.enabled=true">
+      <change afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/src/main/java/com/study/microservices/springcloudapigateway/APIGatewayConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -149,7 +140,7 @@
       <updated>1675318298424</updated>
       <workItem from="1675318304022" duration="16573000" />
       <workItem from="1675357032745" duration="49000" />
-      <workItem from="1675401197950" duration="10313000" />
+      <workItem from="1675401197950" duration="12601000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Limits Microservice as a config client">
       <created>1675319678947</created>
@@ -214,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675424224055</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="1. Spring cloud API gateway added with eureka client&#10;spring.cloud.gateway.discovery.locator.enabled=true">
+      <created>1675429966888</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675429966888</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +242,7 @@
     <MESSAGE value="adding currency exchange service - &#10;/currency-exchange/from/{USD}/to/{INR}&#10;returns the exchange conversion rate from inmemory database (h2)&#10;&#10;adding currency-conversion microservice" />
     <MESSAGE value="calling currency exchange microservice from currency conversion microservice using Rest template and hardcoded Url" />
     <MESSAGE value="1. Adding Naming Server - Eureka discovery server&#10;2. Updating each microservice to act as Eureka clients&#10;3. Updating feign client to use LB &amp; discovery server" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Adding Naming Server - Eureka discovery server&#10;2. Updating each microservice to act as Eureka clients&#10;3. Updating feign client to use LB &amp; discovery server" />
+    <MESSAGE value="1. Spring cloud API gateway added with eureka client&#10;spring.cloud.gateway.discovery.locator.enabled=true" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Spring cloud API gateway added with eureka client&#10;spring.cloud.gateway.discovery.locator.enabled=true" />
   </component>
 </project>
