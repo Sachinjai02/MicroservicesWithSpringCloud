@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="adding currency exchange service - &#10;/currency-exchange/from/{USD}/to/{INR}&#10;returns the exchange conversion rate from inmemory database (h2)">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/controllers/CurrencyConversionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/entities/CurrencyConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/CurrencyExchangeServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/controllers/CurrencyExchangeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/models/CurrencyExchange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/repository/CurrencyExchangeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/test/java/com/study/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="calling currency exchange microservice from currency conversion microservice using Rest template and hardcoded Url">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/CurrencyConversionServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/CurrencyConversionServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/controllers/CurrencyConversionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/controllers/CurrencyConversionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/entities/CurrencyConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/study/microservices/currencyconversionservice/entities/CurrencyConversion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +27,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -93,7 +79,8 @@
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "spring.configuration.checksum": "86add317e0c47629e862c10fd06a568c"
   }
 }]]></component>
   <component name="RunManager" selected="Spring Boot.CurrencyConversionServiceApplication">
@@ -134,7 +121,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675318298424</updated>
-      <workItem from="1675318304022" duration="16059000" />
+      <workItem from="1675318304022" duration="16573000" />
+      <workItem from="1675357032745" duration="49000" />
+      <workItem from="1675401197950" duration="911000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Limits Microservice as a config client">
       <created>1675319678947</created>
@@ -178,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675336558096</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding currency exchange service - &#10;/currency-exchange/from/{USD}/to/{INR}&#10;returns the exchange conversion rate from inmemory database (h2)&#10;&#10;adding currency-conversion microservice">
+      <created>1675346074045</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675346074045</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +200,8 @@
     <MESSAGE value="1. integrating cloud config server to git&#10;2. integrating limits service (cloud config client) to cloud config server" />
     <MESSAGE value="dynamic refresh of configurations using actuator/refresh POST call." />
     <MESSAGE value="adding currency exchange service - &#10;/currency-exchange/from/{USD}/to/{INR}&#10;returns the exchange conversion rate from inmemory database (h2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding currency exchange service - &#10;/currency-exchange/from/{USD}/to/{INR}&#10;returns the exchange conversion rate from inmemory database (h2)" />
+    <MESSAGE value="adding currency exchange service - &#10;/currency-exchange/from/{USD}/to/{INR}&#10;returns the exchange conversion rate from inmemory database (h2)&#10;&#10;adding currency-conversion microservice" />
+    <MESSAGE value="calling currency exchange microservice from currency conversion microservice using Rest template and hardcoded Url" />
+    <option name="LAST_COMMIT_MESSAGE" value="calling currency exchange microservice from currency conversion microservice using Rest template and hardcoded Url" />
   </component>
 </project>

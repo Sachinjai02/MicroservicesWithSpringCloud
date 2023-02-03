@@ -11,7 +11,10 @@ public class CurrencyConversion {
     private Double totalCalculatedAmount;
     private String environment;
 
-    public CurrencyConversion(Long id, String from, String to,  Double quantity, Double conversionMultiple, Double totalCalculatedAmount, String environment) {
+    public CurrencyConversion() {
+    }
+
+    public CurrencyConversion(Long id, String from, String to, Double quantity, Double conversionMultiple, Double totalCalculatedAmount, String environment) {
         this.id = id;
         this.from = from;
         this.to = to;
