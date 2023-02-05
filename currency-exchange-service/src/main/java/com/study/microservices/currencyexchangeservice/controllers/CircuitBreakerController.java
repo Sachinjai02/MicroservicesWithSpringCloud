@@ -1,5 +1,6 @@
 package com.study.microservices.currencyexchangeservice.controllers;
 
+import io.github.resilience4j.bulkhead.annotation.Bulkhead;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import io.github.resilience4j.retry.annotation.Retry;
@@ -18,7 +19,8 @@ public class CircuitBreakerController {
     @GetMapping("/sample-api")
     //@Retry(name="sample-api", fallbackMethod ="sampleAPIFallback")
     //@CircuitBreaker(name="sample-api", fallbackMethod ="sampleAPIFallback")
-    @RateLimiter(name="sample-api")
+    //@RateLimiter(name="sample-api")
+    @Bulkhead(name="sample-api")
     public String sampleAPI() {
         logger.info("Sample API call received");
         //return new RestTemplate().getForObject("http://localhost:8080/some-dummy-url", String.class);

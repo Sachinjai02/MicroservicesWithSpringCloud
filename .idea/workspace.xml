@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="Adding resilience4j dependencies&#10;- implementing Retry mechanism and returning fallback response on max attempts">
+    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="adding ratelimiter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/controllers/CircuitBreakerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/controllers/CircuitBreakerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" afterDir="false" />
@@ -141,7 +141,7 @@
       <workItem from="1675318304022" duration="16573000" />
       <workItem from="1675357032745" duration="49000" />
       <workItem from="1675401197950" duration="16388000" />
-      <workItem from="1675584804715" duration="5341000" />
+      <workItem from="1675584804715" duration="8351000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Limits Microservice as a config client">
       <created>1675319678947</created>
@@ -227,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675589920363</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Adding resilience4j dependencies&#10;- implementing CircuitBreaker pattern&#10;* minNumberOfCalls&#10;* failureRateThreshold&#10;* waitDurationInOpenState&#10;* permittedNumberOfCallsInHalfOpenState">
+      <created>1675592294296</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675592294296</updated>
+    </task>
+    <task id="LOCAL-00014" summary="adding ratelimiter">
+      <created>1675612132634</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1675612132634</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +274,8 @@
     <MESSAGE value="1. Spring cloud API gateway added with eureka client&#10;spring.cloud.gateway.discovery.locator.enabled=true" />
     <MESSAGE value="1. Adding custom routes inside spring cloud API g/w to simplify the end urls." />
     <MESSAGE value="Adding resilience4j dependencies&#10;- implementing Retry mechanism and returning fallback response on max attempts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding resilience4j dependencies&#10;- implementing Retry mechanism and returning fallback response on max attempts" />
+    <MESSAGE value="Adding resilience4j dependencies&#10;- implementing CircuitBreaker pattern&#10;* minNumberOfCalls&#10;* failureRateThreshold&#10;* waitDurationInOpenState&#10;* permittedNumberOfCallsInHalfOpenState" />
+    <MESSAGE value="adding ratelimiter" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding ratelimiter" />
   </component>
 </project>
