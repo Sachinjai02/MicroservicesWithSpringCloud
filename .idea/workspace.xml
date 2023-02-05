@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="1. Adding custom routes inside spring cloud API g/w to simplify the end urls.">
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/controllers/CircuitBreakerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/src/main/java/com/study/microservices/springcloudapigateway/LoggingFilter.java" afterDir="false" />
+    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="Adding resilience4j dependencies&#10;- implementing Retry mechanism and returning fallback response on max attempts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-exchange-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/controllers/CircuitBreakerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/controllers/CircuitBreakerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +86,7 @@
     "spring.configuration.checksum": "8410cad86f1072d4c1025fd55d8663a0"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.SpringCloudDiscoveryServerApplication">
+  <component name="RunManager" selected="Spring Boot.CurrencyExchangeServiceApplication">
     <configuration name="CurrencyConversionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="currency-conversion-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.microservices.currencyconversionservice.CurrencyConversionServiceApplication" />
@@ -143,7 +141,7 @@
       <workItem from="1675318304022" duration="16573000" />
       <workItem from="1675357032745" duration="49000" />
       <workItem from="1675401197950" duration="16388000" />
-      <workItem from="1675584804715" duration="3355000" />
+      <workItem from="1675584804715" duration="5341000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Limits Microservice as a config client">
       <created>1675319678947</created>
@@ -222,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675433560307</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Adding resilience4j dependencies&#10;- implementing Retry mechanism and returning fallback response on max attempts">
+      <created>1675589920363</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675589920363</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +259,7 @@
     <MESSAGE value="1. Adding Naming Server - Eureka discovery server&#10;2. Updating each microservice to act as Eureka clients&#10;3. Updating feign client to use LB &amp; discovery server" />
     <MESSAGE value="1. Spring cloud API gateway added with eureka client&#10;spring.cloud.gateway.discovery.locator.enabled=true" />
     <MESSAGE value="1. Adding custom routes inside spring cloud API g/w to simplify the end urls." />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Adding custom routes inside spring cloud API g/w to simplify the end urls." />
+    <MESSAGE value="Adding resilience4j dependencies&#10;- implementing Retry mechanism and returning fallback response on max attempts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding resilience4j dependencies&#10;- implementing Retry mechanism and returning fallback response on max attempts" />
   </component>
 </project>
