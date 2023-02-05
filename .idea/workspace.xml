@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="1. Spring cloud API gateway added with eureka client&#10;spring.cloud.gateway.discovery.locator.enabled=true">
-      <change afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/src/main/java/com/study/microservices/springcloudapigateway/APIGatewayConfiguration.java" afterDir="false" />
+    <list default="true" id="00512bf2-34bf-4360-a415-7600c627d172" name="Changes" comment="1. Adding custom routes inside spring cloud API g/w to simplify the end urls.">
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/study/microservices/currencyexchangeservice/controllers/CircuitBreakerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/src/main/java/com/study/microservices/springcloudapigateway/LoggingFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,10 +85,10 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "spring.configuration.checksum": "86add317e0c47629e862c10fd06a568c"
+    "spring.configuration.checksum": "8410cad86f1072d4c1025fd55d8663a0"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.SpringCloudApiGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.SpringCloudDiscoveryServerApplication">
     <configuration name="CurrencyConversionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="currency-conversion-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.microservices.currencyconversionservice.CurrencyConversionServiceApplication" />
@@ -140,7 +142,8 @@
       <updated>1675318298424</updated>
       <workItem from="1675318304022" duration="16573000" />
       <workItem from="1675357032745" duration="49000" />
-      <workItem from="1675401197950" duration="12601000" />
+      <workItem from="1675401197950" duration="16388000" />
+      <workItem from="1675584804715" duration="3355000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Limits Microservice as a config client">
       <created>1675319678947</created>
@@ -212,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675429966888</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1. Adding custom routes inside spring cloud API g/w to simplify the end urls.&#10;(A">
+      <created>1675433560307</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675433560307</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +253,7 @@
     <MESSAGE value="calling currency exchange microservice from currency conversion microservice using Rest template and hardcoded Url" />
     <MESSAGE value="1. Adding Naming Server - Eureka discovery server&#10;2. Updating each microservice to act as Eureka clients&#10;3. Updating feign client to use LB &amp; discovery server" />
     <MESSAGE value="1. Spring cloud API gateway added with eureka client&#10;spring.cloud.gateway.discovery.locator.enabled=true" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Spring cloud API gateway added with eureka client&#10;spring.cloud.gateway.discovery.locator.enabled=true" />
+    <MESSAGE value="1. Adding custom routes inside spring cloud API g/w to simplify the end urls." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Adding custom routes inside spring cloud API g/w to simplify the end urls." />
   </component>
 </project>
