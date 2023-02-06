@@ -11,11 +11,13 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/currency-conversion")
 public class CurrencyConversionController {
 
+    private Logger logger = Logger.getLogger(CurrencyConversionController.class.getName());
     @Autowired
     private CurrencyExchangeProxy proxy;
     @Autowired
@@ -26,7 +28,7 @@ public class CurrencyConversionController {
             @PathVariable("to") String to,
             @PathVariable("quantity") Double quantity
     ) {
-
+        logger.info("calculateCurrencyConversion called with " + from + " to " + to + " quantity " + quantity);
         Map<String, String> params = new HashMap<>();
         params.put("from", from);
         params.put("to", to);
